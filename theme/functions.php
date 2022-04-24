@@ -242,3 +242,16 @@ if ( is_admin() ) :
 	require_once( get_template_directory() . '/inc/admin/meta-boxes.php' );
 
 endif;
+
+function artabr_remove_name_cat( $title ){
+    //удаляем слово РУБРИКА
+    if ( is_category() ) {
+        $title = single_cat_title( '', false );
+    }
+    //меняем H1 в категории 6
+    if ( is_category(6) ) {
+        $title = 'Заголовок рубрики';
+    }
+    return $title;
+}
+add_filter( 'get_the_archive_title', 'artabr_remove_name_cat' );
