@@ -1,0 +1,23 @@
+a {
+	color: #399dda;
+}
+
+a:hover {
+	color: #0021ae;
+}
+
+h1.page-title {
+	color: #0021ae;
+}
+
+header.page-header {
+    border-left: 7px solid;
+		border-left-color: #0021ae;
+}
+
+article.category-sticky {
+	  border-top: 7px solid;
+		border-top-color: #0021ae;
+	  border-bottom: 7px solid;
+		border-bottom-color: #0021ae;
+}
